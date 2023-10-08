@@ -1,13 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Contribution graph</title>
   </head>
   <body>
-    
+    <div class="graph-wrapper">
+      <div class="graph">
+        <ul class="months"></ul>
+        <ul class="days">
+          <li>Пн</li>
+          <li>Вт</li>
+          <li>Ср</li>
+          <li>Чт</li>
+          <li>Пт</li>
+          <li>Сб</li>
+          <li>Вс</li>
+        </ul>
+        <ul class="squares"></ul>
+      </div>
+  
+      <div class="graph-legend">
+        <span>Меньше</span>
+        <ul class="squares">
+          <li data-level="0" data-contribution="0"></li>
+          <li data-level="1" data-contribution="1"></li>
+          <li data-level="2" data-contribution="10"></li>
+          <li data-level="3" data-contribution="20"></li>
+          <li data-level="4" data-contribution="30"></li>
+        </ul>
+        <span>Больше</span>
+      </div>
+    </div>
     
     <script type="module" src="/main.js"></script>
   </body>
